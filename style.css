@@ -15,3 +15,102 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+/* moje css */
+
+	h1 {
+		text-align: center;
+	}
+
+	.kontejner {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px;
+		margin: 10px;
+	}
+
+		.jarmila, .klotylda, .magdalena, .lucinda {
+			border: solid 1px grey;
+			border-radius: 10px;
+			box-shadow: aqua 0 3px 5px -3px;
+			text-align: center;
+			padding: 15px;
+			margin: 10px;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 50%;
+		}
+	
+
+ @media screen and (min-width: 540px){  /* vubec nefunguje ...??? */
+	
+	/* .kontejner {
+		display: flex;
+		max-width: 100%;
+		flex-direction: row;
+		justify-content: flex-start; 
+		flex-grow: 1;
+		flex-wrap: wrap;
+		padding: 10px;
+		margin: 10px;
+		/* flex-basis: 50%; proč to nefunguje - aby byly 2 vedle sebe a pod sebou
+	}
+
+		.zena {
+			border: solid 1px grey;
+			border-radius: 10px;
+			box-shadow: aqua 0 3px 5px -3px;
+			text-align: center;
+			padding: 10px;
+			margin: 10px;
+		}
+	
+
+		img {
+			border-radius: 50%;
+		} CELOU TUTO ČÁST JSEM ZAKOMENTOVALA, PROTOŽE V RESPODESIGNU JE TŘEBA DO NOVÉ QUERIES PSÁT POUZE TO, CO MĚNÍM*/
+
+		.kontejner {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.jarmila, .klotylda, .magdalena, .lucinda {
+			flex-basis: 45%;
+			display:flex;
+		}
+
+		text {
+			padding-left: 10px;
+			flex-grow: 1;	
+		} 
+}
+@media screen and (min-width:960px){
+
+	.kontejner {
+		display: flex;
+		max-width: 100%;
+		flex-direction: row;
+		justify-content: space-between;			
+		flex-grow: 0;
+		flex-wrap: nowrap;
+		padding: 10px;
+		margin: 10px;
+		}
+
+	.jarmila, .klotylda, .magdalena, .lucinda {
+		display: block;
+
+	}
+	
+	img {
+		max-width: 50%;
+	}
+
+	}
+
+

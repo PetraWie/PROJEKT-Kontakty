@@ -18,6 +18,7 @@ PC      960px a víc
 
 /* moje css */
 
+/* --------------------- MOBIL --------------------- */
 	h1 {
 		text-align: center;
 	}
@@ -47,6 +48,7 @@ PC      960px a víc
 		}
 	
 
+/* --------------------- TABLET --------------------- */
  @media screen and (min-width: 540px){  /* vubec nefunguje ...??? */
 	
 	/* .kontejner {
@@ -84,11 +86,21 @@ PC      960px a víc
 			display:flex;
 		}
 
-		text {
+		.text {
+			display: flex;
 			padding-left: 10px;
-			flex-grow: 1;	
+			flex-shrink: 1;
+			flex-wrap: wrap;
 		} 
+
+		img {
+			flex-basis: 100%;
+			height: auto;
+			flex-grow: 0;
+		}
 }
+
+/* --------------------- POČÍTAČ --------------------- */
 @media screen and (min-width:960px){
 
 	.kontejner {
@@ -109,6 +121,7 @@ PC      960px a víc
 	
 	img {
 		max-width: 50%;
+		align-content: center;
 	}
 
 	}

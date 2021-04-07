@@ -84,13 +84,11 @@ PC      960px a víc
 		.jarmila, .klotylda, .magdalena, .lucinda {
 			flex-basis: 45%;
 			display:flex;
+			align-items: center;
 		}
 
 		.text {
-			display: flex;
 			padding-left: 10px;
-			flex-shrink: 1;
-			flex-wrap: wrap;
 		} 
 
 		img {
@@ -116,7 +114,6 @@ PC      960px a víc
 
 	.jarmila, .klotylda, .magdalena, .lucinda {
 		display: block;
-
 	}
 	
 	img {
